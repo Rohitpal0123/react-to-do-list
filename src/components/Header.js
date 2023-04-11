@@ -1,10 +1,8 @@
-import React from "react";
-
 const Header = () => {
   return (
-    <>
-      <h1>Text</h1>
-    </>
+    <header>
+      <h1>To do list ..... Right away !!</h1>
+    </header>
   );
 };
 
