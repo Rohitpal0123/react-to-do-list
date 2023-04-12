@@ -1,5 +1,17 @@
+import Task from "./Task";
 const tasks = [];
 
-export const Tasks = () => {
-  return <div>Tasks</div>;
+export const Tasks = ({ tasks, onDelete, onToggle }) => {
+  return (
+    <>
+      {tasks.map((task) => (
+        <Task
+          key={task.id}
+          task={task}
+          onDelete={onDelete}
+          onToggle={onToggle}
+        />
+      ))}
+    </>
+  );
 };
